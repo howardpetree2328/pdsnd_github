@@ -6,4 +6,4 @@
 
 ### bikeshare.py, readme.txt
 
-### All the credits used for the python file creation are located in the readme.txt file.
+### All the credits used for the python file creation are located in the readme.txt file.  Thank you for the training!!!
