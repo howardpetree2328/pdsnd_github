@@ -19,7 +19,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 yescheck = ['yes','y','ye','ya','yah','yea','yeah','sure','ok','okay','uh huh','why not','alright','yep','yup']
-nocheck = ['no','n','nah','nope','niet','uh uh','uhuh','nuh uh','don't think so','nay','negative']
+nocheck = ['no','n','nah','nope','niet','uh uh','uhuh','nuh uh',"don't think so",'nay','negative']
 
 def get_filters():
     """
