@@ -19,6 +19,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 yescheck = ['yes','y','ye','ya','yah','yea','yeah','sure','ok','okay','uh huh','why not','alright','yep','yup']
+nocheck = ['no','n','nah','nope','niet','uh uh','uhuh','nuh uh','don't think so','nay','negative']
 
 def get_filters():
     """
@@ -183,9 +184,9 @@ def time_stats(df,city,month,day,hour):
     stloc = 5
     # Input for user selection to choose next 5 or no
     yesdat = input('\nWould you like to view 5 more rows of individual rental hour data?  Enter yes or no\n')
-    while yesdat.lower() != 'no':
+    while yesdat.lower() not in nocheck:
         # Using if statement to break out of the while loop if no is chosen, or looping back if yes
-        if yesdat.lower() == 'no':
+        if yesdat.lower() in nocheck:
             break
             # Checking yescheck condition and, if met, printing 5 lines of the dataframe and adding 5 to stloc variable for looping back to print the next 5 lines
         elif (yesdat.lower() in yescheck):  
@@ -223,9 +224,9 @@ def station_stats(df,city,month,day):
     stloc = 5
     # Input for user selection to choose next 5 or no
     yesdat = input('\nWould you like to view 5 more rows of individual Starting Station rental data?  Enter yes or no\n')
-    while yesdat.lower() != 'no':
+    while yesdat.lower() not in nocheck:
         # Using if statement to break out of the while loop if no is chosen, or looping back if yes
-        if yesdat.lower() == 'no':
+        if yesdat.lower() in nocheck:
             break
             # Checking yescheck condition and, if met, printing 5 lines of the dataframe and adding 5 to stloc variable for looping back to print the next 5 lines
         elif (yesdat.lower() in yescheck):  
@@ -266,9 +267,9 @@ def station_stats(df,city,month,day):
     stloc = 5
     # Input for user selection to choose next 5 or no
     yesdat = input('\nWould you like to view 5 more rows of individual Ending Station rental data?  Enter yes or no\n')
-    while yesdat.lower() != 'no':
+    while yesdat.lower() not in nocheck:
         # Using if statement to break out of the while loop if no is chosen, or looping back if yes
-        if yesdat.lower() == 'no':
+        if yesdat.lower() in nocheck:
             break
             # Checking yescheck condition and, if met, printing 5 lines of the dataframe and adding 5 to stloc variable for looping back to print the next 5 lines
         elif (yesdat.lower() in yescheck):  
