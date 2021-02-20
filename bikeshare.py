@@ -3,7 +3,7 @@
 Created on Sun Dec 13 20:43:36 2020
 
 @author: hp2328
-This has been quite the course!
+This has been quite the course!  I am extremely proud to have completed this course!!!
 """
 
 import time
